@@ -29,6 +29,7 @@ class FinanceDataset(Dataset):
     def __getitem__(self, idx):
         return (self.input_ids[idx], self.attention_mask[idx])
     
+    
 if __name__ == "__main__":
     from transformers import GPT2Tokenizer
     tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
